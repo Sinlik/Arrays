@@ -1,4 +1,4 @@
-const classes = ['red', 'green', 'purple']
+const classes = ['red', 'green', 'purple', 'orchid']
 let color = 0;
 const heading = document.getElementById('heading')
 
@@ -19,4 +19,5 @@ document.addEventListener("click", function()
 function changeColor()
 {
     heading.style.color = classes[color]
+    heading.style.transition = 'classes[color] 10s ease-in-out'
 }
